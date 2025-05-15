@@ -21,8 +21,9 @@
 
 ```
 pip install numpy opencv-python
-pip isntall mss screeninfo
+pip install mss screeninfo
 pip install pyperclip tqdm
+pip install pywin32
 ```
 
 ## run
