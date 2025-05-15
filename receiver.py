@@ -153,7 +153,7 @@ class Receiver:
             logger.error(f'file md5 error')
         if self.file_info['use_gzip']:
             file_data = gzip.decompress(file_data)
-        with open(f'{datetime.now().strftime("%Y%m%d%HH%MM%S")}_' + self.file_info['file_name'], 'wb') as f:
+        with open(f'{datetime.now().strftime("%Y%m%d%H%M%S")}_' + self.file_info['file_name'], 'wb') as f:
             f.write(file_data)
         self.sct.close()
 
